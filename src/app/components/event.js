@@ -55,7 +55,7 @@ const Event = () => {
             initial="hidden"
             animate={headingControls}
             variants={headingVariant}
-            className="text-center text-3xl font-playfair md:text-5xl font-black mt-6 md:mt-11 text-white"
+            className="text-center text-[48px] md:text-[64px] font-playfair md:text-5xl font-black mt-6 md:mt-11 text-white"
           >
             Events
           </motion.h1>
