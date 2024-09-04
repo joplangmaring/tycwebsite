@@ -68,7 +68,7 @@ const Vision = () => {
             variants={headingVariant}
             className='font-black text-[48px] md:text-[64px] text-white font-playfair'
           >
-            OUR VISION
+            Our Vision
           </motion.span>
         </div>
         <div className='mx-4 md:mx-[15%] p-6 md:p-11 mb-20 text-start md:text-center'>

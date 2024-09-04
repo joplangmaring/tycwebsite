@@ -57,7 +57,7 @@ const About = () => {
           variants={headingVariant}
           className="mb-6 md:mb-8 ml-[12%] md:ml-0"
         >
-          <h1 className="text-[48px] md:text-[64px] font-black font-playfair text-start md:text-center text-white">ABOUT</h1>
+          <h1 className="text-[48px] md:text-[64px] font-black font-playfair text-start md:text-center text-white">About</h1>
         </motion.div>
         <motion.div
           ref={textRef}
