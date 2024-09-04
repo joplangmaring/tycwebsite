@@ -43,7 +43,7 @@ import Footer from '@/app/components/footer';
 import Navbar from '@/app/components/navbar';
 
 const Page = () => {
-  const homeRef = useRef(null);  // Added ref for Home
+  const homeRef = useRef(null); 
   const aboutRef = useRef(null);
   const visionRef = useRef(null);
   const eventsRef = useRef(null);
@@ -58,7 +58,7 @@ const Page = () => {
         eventsRef={eventsRef}
         contactRef={contactRef}
       />
-      <div ref={homeRef}><Homeimg /></div>  // Attached homeRef to Homeimg section
+      <div ref={homeRef}><Homeimg /></div> 
       <div ref={aboutRef}><About /></div>
       <div ref={visionRef}><Vision /></div>
       <div ref={eventsRef}><Event /></div>

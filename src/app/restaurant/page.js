@@ -1,4 +1,4 @@
-import Barstage from './components/navbar';
+// import Barstage from './components/navbar';
 import Ihmage from './components/imagepool';
 import Footer from './components/footer';
 
