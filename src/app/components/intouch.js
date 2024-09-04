@@ -61,7 +61,7 @@ const IntouchImage = () => {
               <div className='w-full p-3'>
                 <div className='flex flex-col sm:flex-row gap-4 w-full'>
                   <div className='mb-4 w-full'>
-                    <label htmlFor="firstname" className='block mb-1 font-playfair'>FIRST NAME</label>
+                    <label htmlFor="firstname" className='block mb-1 font-playfair'>First Name</label>
                     <input
                       type="text"
                       id="firstname"
@@ -72,7 +72,7 @@ const IntouchImage = () => {
                     />
                   </div>
                   <div className='mb-4 w-full'>
-                    <label htmlFor="lastname" className='block mb-1 font-playfair'>LAST NAME</label>
+                    <label htmlFor="lastname" className='block mb-1 font-playfair'>Last Name</label>
                     <input
                       type="text"
                       id="lastname"
@@ -86,7 +86,7 @@ const IntouchImage = () => {
 
                 <div className='flex flex-col sm:flex-row gap-4 w-full'>
                   <div className='mb-4 w-full sm:w-[49%]'>
-                    <label htmlFor="email" className='block mb-1 font-playfair'>EMAIL</label>
+                    <label htmlFor="email" className='block mb-1 font-playfair'>Email</label>
                     <input
                       type="email"
                       id="email"
@@ -100,7 +100,7 @@ const IntouchImage = () => {
 
                 <div className='flex flex-col sm:flex-row w-full mt-10 sm:mt-20'>
                   <div className='mb-4 w-full'>
-                    <label htmlFor="message" className='block mb-1 font-playfair'>MESSAGE</label>
+                    <label htmlFor="message" className='block mb-1 font-playfair'>Message</label>
                     <textarea
                       id="message"
                       value={formData.message}

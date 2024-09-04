@@ -66,14 +66,14 @@ const HomeImg = () => {
         initial="hidden"
         animate={controls}
         variants={textVariant}
-        className="absolute inset-0 flex items-center justify-center p-4 md:mt-[20%] mt-[100%]"
+        className="absolute inset-0 flex items-center justify-center p-4 md:mt-[33%] mt-[90%]"
       >
         <button
           onClick={handleClick}
           className="flex flex-col items-center relative border-2 border-transparent py-2 px-4 rounded-lg"
         >
           <span className="text-white font-playfair text-xl sm:text-2xl md:text-3xl lg:text-3xl relative">
-            RESERVE NOW
+            Reserve Now
             <span className="absolute left-0 bottom-[-5px] w-full h-[1px] bg-white rounded-full"></span>
           </span>
           <HiArrowRightCircle className="text-4xl sm:text-5xl md:text-4xl lg:text-4xl text-white mt-3 sm:mt-5" />
