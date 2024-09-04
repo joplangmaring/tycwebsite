@@ -66,7 +66,7 @@ const About = () => {
           variants={textVariant}
           className="mx-12 md:mx-[20%] text-start md:text-center"
         >
-          <p className="text-[16px] md:text-[20px] leading-[35px]">
+          <p className="text-[16px] md:text-[20px] font-raleway leading-[35px]">
             Welcome to The Yeastern Civilization, Meghalaya's first brewery, where we craft exceptional beers inspired by the region's rich culture and natural beauty. Our passion for quality and innovation drives us to create unique brews that reflect our vibrant heritage.
           </p>
         </motion.div>
