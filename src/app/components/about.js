@@ -1,32 +1,32 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import about from '../../../public/about.png';
 
 const About = () => {
+  const [headingTriggered, setHeadingTriggered] = useState(false);
+  const [textTriggered, setTextTriggered] = useState(false);
   const headingControls = useAnimation();
   const textControls = useAnimation();
   const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2 });
   const { ref: textRef, inView: textInView } = useInView({ threshold: 0.2 });
 
   useEffect(() => {
-    if (headingInView) {
+    if (headingInView && !headingTriggered) {
       headingControls.start('visible');
-    } else {
-      headingControls.start('hidden');
+      setHeadingTriggered(true); // Set the state to true to prevent re-triggering
     }
-  }, [headingControls, headingInView]);
+  }, [headingControls, headingInView, headingTriggered]);
 
   useEffect(() => {
-    if (textInView) {
+    if (textInView && !textTriggered) {
       textControls.start('visible');
-    } else {
-      textControls.start('hidden');
+      setTextTriggered(true); // Set the state to true to prevent re-triggering
     }
-  }, [textControls, textInView]);
+  }, [textControls, textInView, textTriggered]);
 
   const headingVariant = {
     hidden: { opacity: 0, y: -30 },
@@ -55,8 +55,7 @@ const About = () => {
           initial="hidden"
           animate={headingControls}
           variants={headingVariant}
-          className="mb-6 md:mb-8  ml-[12%] md:ml-0"
-
+          className="mb-6 md:mb-8 ml-[12%] md:ml-0"
         >
           <h1 className="text-[48px] md:text-[64px] font-black font-playfair text-start md:text-center text-white">ABOUT</h1>
         </motion.div>

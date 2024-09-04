@@ -52,7 +52,7 @@ const Page = () => {
   return (
     <div className='bg-black'>
       <Navbar
-        homeRef={homeRef}  // Passed homeRef to Navbar
+        homeRef={homeRef}  
         aboutRef={aboutRef}
         visionRef={visionRef}
         eventsRef={eventsRef}

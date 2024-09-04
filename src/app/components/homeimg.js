@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { HiArrowRightCircle } from "react-icons/hi2";
 import homeimg from '../../../public/homeimg.png';
+import smallhome from '../../../public/smallhome.png';
 import Image from 'next/image';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -35,20 +36,37 @@ const HomeImg = () => {
   };
 
   return (
-    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[100vh] sm:w-[80%] md:w-full mx-auto" id='home'>
-      <Image
-        src={homeimg}
-        alt="Home Image"
-        layout="fill"
-        className="object-cover z-0"
-      />
+    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[100vh] mx-auto" id='home'>
+      {/* Desktop Image */}
+      <div className="hidden md:block relative w-full h-full">
+        <Image
+          src={homeimg}
+          alt="Home Image"
+          layout="fill"
+          className="object-cover z-0"
+        />
+      </div>
+      
+      {/* Small Screen Image */}
+      <div className="md:hidden relative w-full h-full">
+        <Image
+          src={smallhome}
+          alt="Home Image"
+          layout="fill"
+          className="object-cover z-0"
+        />
+      </div>
+
+      {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black h-full w-full"></div>
+
+      {/* Button */}
       <motion.div
         ref={ref}
         initial="hidden"
         animate={controls}
         variants={textVariant}
-        className="absolute inset-0 flex items-center justify-center p-4 mt-[90%] sm:mt-[60%] md:mt-[20%]"
+        className="absolute inset-0 flex items-center justify-center p-4 md:mt-[20%] mt-[100%]"
       >
         <button
           onClick={handleClick}

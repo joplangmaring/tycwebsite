@@ -7,7 +7,7 @@ import Intouch1 from '../../../public/touchbg.png';
 
 const IntouchImage = () => {
   return (
-    <div className=''>
+    <div className='pt-1'>
       <div className='text-center mb-6 sm:mb-11'>
         <h1 className='font-black text-3xl sm:text-5xl pt-[60px] sm:pt-[90px] text-white font-playfair' id='contact'>LET'S GET IN TOUCH</h1>
         <p className='text-xs sm:text-sm font-bold text-white font-raleway'>Or just reach out manually to hello@tycindia.com</p>
