@@ -5,6 +5,9 @@ import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import vision from '../../../public/vision.png';
+import { Raleway } from 'next/font/google';
+
+const raleway = Raleway({ subsets: ['latin'] }); // Import and configure Raleway font
 
 const Vision = () => {
   const headingControls = useAnimation();
@@ -77,7 +80,7 @@ const Vision = () => {
             initial="hidden"
             animate={textControls}
             variants={textVariant}
-            className='text-[16px] md:text-[20px] text-white leading-[40px] font-raleway'
+            className={`text-[16px] md:text-[20px] text-white leading-[40px] ${raleway.className}`} // Apply Raleway font
           >
             Our vision at The Yeastern Civilization is to establish ourselves as Meghalaya's
             foremost brewery, renowned for our dedication to crafting world-class beers

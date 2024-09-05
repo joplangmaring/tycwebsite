@@ -5,6 +5,12 @@ import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import about from '../../../public/about.png';
+import { Raleway } from 'next/font/google';
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['400', '700'], 
+});
 
 const About = () => {
   const headingControls = useAnimation();
@@ -57,7 +63,7 @@ const About = () => {
           variants={animationVariant}
           className="mx-12 md:mx-[20%] text-start md:text-center"
         >
-          <p className="text-[16px] md:text-[20px] font-raleway leading-[35px]">
+          <p className={`text-[16px] md:text-[20px] leading-[35px] ${raleway.className}`}>
             Welcome to The Yeastern Civilization, Meghalaya's first brewery, where we craft exceptional beers inspired by the region's rich culture and natural beauty. Our passion for quality and innovation drives us to create unique brews that reflect our vibrant heritage.
           </p>
         </motion.div>
@@ -66,9 +72,9 @@ const About = () => {
           initial="hidden"
           animate={textControls}
           variants={animationVariant}
-          className="mt-6 md:mt-4 mx-12 md:mx-[23%] text-start md:text-center "
+          className="mt-6 md:mt-4 mx-12 md:mx-[23%] text-start md:text-center"
         >
-          <p className="text-[16px] md:text-[20px] font-raleway leading-[35px]">
+          <p className={`text-[16px] md:text-[20px] leading-[35px] ${raleway.className}`}>
             Located in the heart of Meghalaya, we blend traditional brewing techniques with modern expertise, using the finest local ingredients to honor our land and its people. Every bottle is a tribute to our dedication to excellence and creativity.
           </p>
         </motion.div>

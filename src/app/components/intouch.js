@@ -5,6 +5,12 @@ import Image from 'next/image';
 import Intouch from '../../../public/touch1.png';
 import Intouch1 from '../../../public/touchbg.png';
 import axios from 'axios';
+import { Raleway } from 'next/font/google';
+
+const raleway = Raleway({
+  weight: ['400', '700'], // Include weights you're using, adjust as needed
+  subsets: ['latin'],
+});
 
 const IntouchImage = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +51,7 @@ const IntouchImage = () => {
     <div className='pt-1'>
       <div className='text-center mb-[60px] sm:mb-11 mx-[59px]'>
         <h1 className='font-black text-[48px] sm:text-[60px] pt-[60px] sm:pt-[90px] text-white font-playfair leading-[50px]' id='contact'>LET'S GET IN TOUCH</h1>
-        <p className='text-[14px] sm:text-sm font-bold text-white font-raleway'>Or just reach out manually to hello@tycindia.com</p>
+        <p className={`${raleway.className} text-[14px] sm:text-sm font-bold text-white`}>Or just reach out manually to hello@tycindia.com</p>
       </div>
 
       <div className='flex flex-col lg:flex-row'>
@@ -56,7 +62,7 @@ const IntouchImage = () => {
         <div className='relative w-full h-[400px] sm:h-auto'>
           <Image src={Intouch1} alt="Intouch Background" className='absolute inset-0 w-full h-full object-cover' />
 
-          <div className='relative bg-black bg-opacity-60 w-full  flex items-center justify-center'>
+          <div className='relative bg-black bg-opacity-60 w-full flex items-center justify-center'>
             <form onSubmit={handleSubmit} className='flex flex-col gap-4 p-4 sm:p-8 bg-black bg-opacity-60 text-white w-full max-w-4xl'>
               <div className='w-full p-3'>
                 <div className='flex flex-col sm:flex-row gap-4 w-full'>

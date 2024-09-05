@@ -12,6 +12,10 @@ import grind from '../../../public/Grind 10th.png';
 import Link from 'next/link';
 import event from '../../../public/eventbg.png';
 import { HiArrowRightCircle } from "react-icons/hi2";
+import { Raleway } from 'next/font/google';
+
+
+const raleway = Raleway({ subsets: ['latin'] });
 
 const Event = () => {
   const headingControls = useAnimation();
@@ -115,8 +119,8 @@ const Event = () => {
 
         {/* Reserve Now Button */}
         <div className="flex justify-center mt-8 md:mt-10">
-          <button className="bg-black font-raleway text-lg md:text-[20px] text-white text-center flex items-center gap-2 px-4 md:px-6 py-2 md:py-3">
-            <Link href="" className="flex items-center gap-2">
+        <button className={`bg-black ${raleway.className} text-lg md:text-[20px] text-white text-center flex items-center gap-2 px-4 md:px-6 py-2 md:py-3`}>
+            <Link href="" className="flex items-center gap-2 ">
               Reserve Now
               <HiArrowRightCircle className='text-xl md:text-2xl' />
             </Link>
