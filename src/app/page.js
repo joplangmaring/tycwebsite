@@ -61,8 +61,8 @@ const Page = () => {
       <div ref={homeRef}><Homeimg /></div> 
       <div ref={aboutRef}><About /></div>
       <div ref={visionRef}><Vision /></div>
-      <div ref={eventsRef}><Event /></div>
       <Interior />
+      <div ref={eventsRef}><Event /></div>
       <Gallery />
       <div ref={contactRef}><Intouch /></div>
       <Footer />

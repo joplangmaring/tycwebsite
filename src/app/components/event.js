@@ -34,16 +34,16 @@ const Event = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full">
       {/* Background Image */}
-      <div className="relative w-full h-[100vh] md:h-screen">
+      <div className="relative w-full h-[80vh] md:h-screen">
         <Image
           src={event}
           alt="Event Background"
           layout="fill"
           objectFit="cover"
           quality={100}
-          className="z-0"
+          className=""
         />
       </div>
 

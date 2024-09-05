@@ -113,7 +113,7 @@ const IntouchImage = () => {
                 </div>
                 <button
                   type="submit"
-                  className='bg-white text-black font-playfair p-2 px-20 text-[24px]'
+                  className='bg-white text-black font-playfair p-2 px-20 text-[24px] w-full sm:w-auto'
                   disabled={loading}
                 >
                   {loading ? 'SENDING...' : 'SUBMIT'}
