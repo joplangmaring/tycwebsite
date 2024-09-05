@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRouter } from 'next/navigation';
+import { Link } from 'react-scroll';
+
 
 const HomeImg = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
@@ -32,7 +34,7 @@ const HomeImg = () => {
   };
 
   const handleClick = () => {
-    router.push('/bar');
+    router.push('https://onlybees.in/tyc/restaurant/');
   };
 
   return (

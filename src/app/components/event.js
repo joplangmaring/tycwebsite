@@ -14,7 +14,7 @@ import { HiArrowRightCircle } from "react-icons/hi2";
 
 const Event = () => {
   const headingControls = useAnimation();
-  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2 });
+  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     if (headingInView) {
