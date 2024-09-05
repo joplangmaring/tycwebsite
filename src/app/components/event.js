@@ -36,7 +36,7 @@ const Event = () => {
   return (
     <div className="relative w-full">
       {/* Background Image */}
-      <div className="relative w-full h-[80vh] md:h-screen">
+      <div className="relative w-full h-[70vh] md:h-screen">
         <Image
           src={event}
           alt="Event Background"
@@ -49,13 +49,13 @@ const Event = () => {
 
       {/* Overlay content */}
       <div className="absolute inset-0 bg-[#000000D9] pt-[50px] md:pt-[70px]">
-        <div className="border border-[#000000D9] mb-8 md:mb-11">
+        <div className="border border-[#000000D9] md:mb-11">
           <motion.h1
             ref={headingRef}
             initial="hidden"
             animate={headingControls}
             variants={headingVariant}
-            className="text-center text-[48px] md:text-[64px] font-playfair md:text-5xl font-black mt-6 md:mt-11 text-white"
+            className="text-start md:text-center ml-9 md:ml-0 text-[48px] md:text-[64px] font-playfair md:text-5xl font-black mt-6 md:mt-11 text-white"
           >
             Events
           </motion.h1>
@@ -64,8 +64,8 @@ const Event = () => {
         {/* Grid Layout with Responsive Item Sizes */}
         <div className="grid grid-cols-2  md:gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 mx-4 md:mx-20">
           <div className="flex flex-col items-center">
-            <span className="mb-2 text-white text-sm md:text-base font-playfair">WEDNESDAY</span>
-            <div className="relative w-[150px] h-[120px] md:w-[300px] md:h-[300px]">
+            <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">WEDNESDAY</span>
+            <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px]">
               <Image
                 src={grind}
                 alt="Grind event"
@@ -76,8 +76,8 @@ const Event = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <span className="mb-2 text-white text-sm md:text-base font-playfair">TUESDAY</span>
-            <div className="relative w-[150px] h-[120px] md:w-[300px] md:h-[300px]">
+            <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">TUESDAY</span>
+            <div className="relative w-[150px] h-[150px] mb-3  md:w-[300px] md:h-[300px]">
               <Image
                 src={man}
                 alt="Man event"
@@ -88,8 +88,8 @@ const Event = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <span className="mb-2 text-white text-sm md:text-base font-playfair">FRIDAY</span>
-            <div className="relative w-[150px] h-[120px] md:w-[300px] md:h-[300px]">
+            <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">FRIDAY</span>
+            <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px]">
               <Image
                 src={tyc27}
                 alt="TYC 27th event"
@@ -100,8 +100,8 @@ const Event = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <span className="mb-2 text-white text-sm md:text-base font-playfair">SATURDAY</span>
-            <div className="relative w-[150px] h-[120px] md:w-[300px] md:h-[300px]">
+            <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">SATURDAY</span>
+            <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px]">
               <Image
                 src={story}
                 alt="Story event"

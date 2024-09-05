@@ -44,8 +44,8 @@ const IntouchImage = () => {
   return (
     <div className='pt-1'>
       <div className='text-center mb-[60px] sm:mb-11 mx-16'>
-        <h1 className='font-black text-[48px] sm:text-[48px] pt-[60px] sm:pt-[90px] text-white font-playfair leading-[50px]' id='contact'>LET'S GET IN TOUCH</h1>
-        <p className='text-xs sm:text-sm font-bold text-white font-raleway'>Or just reach out manually to hello@tycindia.com</p>
+        <h1 className='font-black text-[48px] sm:text-[60px] pt-[60px] sm:pt-[90px] text-white font-playfair leading-[50px]' id='contact'>LET'S GET IN TOUCH</h1>
+        <p className='text-[14px] sm:text-sm font-bold text-white font-raleway'>Or just reach out manually to hello@tycindia.com</p>
       </div>
 
       <div className='flex flex-col lg:flex-row'>

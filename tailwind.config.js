@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
         raleway: ['Raleway', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, #000000 3%, rgba(0, 0, 0, 0) 23.5%)',

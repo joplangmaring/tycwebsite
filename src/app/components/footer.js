@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className='text-center mt-2'>
-        <span className='text-[12px]  text-white'>Copyright © 2024 THE YEASTERN CIVILIZATION</span>
+        <span className='text-[12px]  font-inter text-white'>Copyright © 2024 THE YEASTERN CIVILIZATION</span>
       </div>
     </div>
   )
