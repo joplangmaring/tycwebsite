@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useEffect } from 'react';
@@ -14,7 +15,7 @@ import { HiArrowRightCircle } from "react-icons/hi2";
 
 const Event = () => {
   const headingControls = useAnimation();
-  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (headingInView) {
@@ -48,7 +49,7 @@ const Event = () => {
       </div>
 
       {/* Overlay content */}
-      <div className="absolute inset-0 bg-[#000000D9] pt-[50px] md:pt-[70px]">
+      <div className="absolute inset-0 bg-[#000000D9] pt-[50px] md:pt-[70px] ">
         <div className="border border-[#000000D9] md:mb-11">
           <motion.h1
             ref={headingRef}
@@ -62,7 +63,7 @@ const Event = () => {
         </div>
 
         {/* Grid Layout with Responsive Item Sizes */}
-        <div className="grid grid-cols-2  md:gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 mx-4 md:mx-20">
+        <div className="grid grid-cols-2 md:gap-4 p-2 sm:p-4 md:p-0 lg:grid-cols-4 mx-4 md:mx-20">
           <div className="flex flex-col items-center">
             <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">WEDNESDAY</span>
             <div className="relative w-[150px] h-[150px] md:w-[300px] md:h-[300px]">
@@ -77,7 +78,7 @@ const Event = () => {
 
           <div className="flex flex-col items-center">
             <span className="mb-2 text-white text-sm md:text-base font-playfair hidden md:block">TUESDAY</span>
-            <div className="relative w-[150px] h-[150px] mb-3  md:w-[300px] md:h-[300px]">
+            <div className="relative w-[150px] h-[150px] mb-4  md:w-[300px] md:h-[300px]">
               <Image
                 src={man}
                 alt="Man event"
@@ -115,7 +116,7 @@ const Event = () => {
         {/* Reserve Now Button */}
         <div className="flex justify-center mt-8 md:mt-10">
           <button className="bg-black font-raleway text-lg md:text-[20px] text-white text-center flex items-center gap-2 px-4 md:px-6 py-2 md:py-3">
-            <Link href="https://onlybees.in/tyc/restaurant" className="flex items-center gap-2">
+            <Link href="" className="flex items-center gap-2">
               Reserve Now
               <HiArrowRightCircle className='text-xl md:text-2xl' />
             </Link>

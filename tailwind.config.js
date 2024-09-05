@@ -15,7 +15,7 @@ module.exports = {
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
-        raleway: ['Raleway', 'sans-serif'],
+        sans: ['Raleway', 'sans-serif'], 
         inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {

@@ -10,7 +10,7 @@ import interiorsmall from '../../../public/interirorsmall.png';
 
 const Interior = () => {
   return (
-    <div className='relative' id='interiors'>
+    <div className='relative'>
       {/* Gradient Overlay */}
       <div className='absolute inset-0 bg-custom-gradient z-10 pointer-events-none'></div>
       
@@ -21,7 +21,7 @@ const Interior = () => {
 
       {/* Large images (shown on medium and larger screens) */}
       <div className='hidden md:flex flex-col md:flex-row'>
-        {/* Setting a fixed height for all images */}
+        {/* Ensure full width and height on large screens */}
         <div className='w-full md:w-full h-[600px] relative'>
           <Image src={interior_1} alt="Interior 1" className='object-cover w-full h-full' />
         </div>
@@ -38,7 +38,7 @@ const Interior = () => {
 
       {/* Small image (shown on small screens) */}
       <div className='md:hidden'>
-         <Image src={interiorsmall} alt="Interior Small" />
+        <Image src={interiorsmall} alt="Interior Small" className='w-full h-auto' />
       </div>
     </div>
   );

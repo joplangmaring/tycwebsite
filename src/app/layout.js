@@ -1,8 +1,12 @@
 import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
 
-//Components
+// Initialize the Inter and Raleway fonts
+const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
+
+// Components
 import Navbar from '@/app/components/navbar'
 
 export const metadata = {
@@ -13,23 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${raleway.className}`}>
         <Navbar />
         {children}
       </body>
     </html>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
