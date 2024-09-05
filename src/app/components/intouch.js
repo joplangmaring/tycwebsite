@@ -43,20 +43,21 @@ const IntouchImage = () => {
 
   return (
     <div className='pt-1'>
-      <div className='text-center mb-6 sm:mb-11'>
-        <h1 className='font-black text-3xl sm:text-5xl pt-[60px] sm:pt-[90px] text-white font-playfair' id='contact'>LET'S GET IN TOUCH</h1>
+      <div className='text-center mb-[60px] sm:mb-11 mx-16'>
+        <h1 className='font-black text-[48px] sm:text-[48px] pt-[60px] sm:pt-[90px] text-white font-playfair leading-[50px]' id='contact'>LET'S GET IN TOUCH</h1>
         <p className='text-xs sm:text-sm font-bold text-white font-raleway'>Or just reach out manually to hello@tycindia.com</p>
       </div>
 
       <div className='flex flex-col lg:flex-row'>
-        <div className='relative w-full lg:w-[70%] h-[300px] sm:h-auto'>
+        {/* Hide this image on small screens, show only on medium and larger screens */}
+        <div className='relative w-full lg:w-[70%] h-[300px] sm:h-auto hidden md:block'>
           <Image src={Intouch} alt="Intouch" layout="fill" objectFit="cover" />
         </div>
 
         <div className='relative w-full h-[400px] sm:h-auto'>
           <Image src={Intouch1} alt="Intouch Background" className='absolute inset-0 w-full h-full object-cover' />
 
-          <div className='relative bg-black bg-opacity-60 w-full h-full flex items-center justify-center'>
+          <div className='relative bg-black bg-opacity-60 w-full  flex items-center justify-center'>
             <form onSubmit={handleSubmit} className='flex flex-col gap-4 p-4 sm:p-8 bg-black bg-opacity-60 text-white w-full max-w-4xl'>
               <div className='w-full p-3'>
                 <div className='flex flex-col sm:flex-row gap-4 w-full'>
@@ -112,7 +113,7 @@ const IntouchImage = () => {
                 </div>
                 <button
                   type="submit"
-                  className='bg-white text-black font-playfair p-2  px-20 text-[24px]'
+                  className='bg-white text-black font-playfair p-2 px-20 text-[24px]'
                   disabled={loading}
                 >
                   {loading ? 'SENDING...' : 'SUBMIT'}

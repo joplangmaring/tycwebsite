@@ -89,18 +89,30 @@
 import React from 'react';
 import Image from 'next/image';
 import interior from '../../../public/interior.png';
+import smallgallery from '../../../public/smallgallery.png';
 
 const Gallery = () => {
   return (
-    <div  className=''>
+    <div>
       <h1 className='text-center font-playfair text-5xl mt-[120px] mb-10 font-black text-white'>Gallery</h1>
-      <div className='flex justify-center'>
+      
+      {/* Large Image (Interior) - shown on medium and larger screens */}
+      <div className='hidden md:flex justify-center'>
         <Image
           src={interior}
           alt="Interior"
           width={1300} // Adjust width as needed
           height={600} // Adjust height as needed
           className='object-cover'
+        />
+      </div>
+
+      {/* Small Image (smallgallery) - shown on small screens */}
+      <div className='md:hidden flex items-center justify-center'>
+        <Image 
+          src={smallgallery} 
+          alt="Small Gallery" 
+          className='object-cover' 
         />
       </div>
     </div>

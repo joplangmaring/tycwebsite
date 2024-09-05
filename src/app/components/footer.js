@@ -8,14 +8,14 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className=' mt-20 sm:mt-0'>
+    <div className=' mt-40 sm:mt-0'>
       <div className='flex justify-center mt-11 gap-3 '>
         <Link href=""><FaFacebookSquare className='text-4xl text-white' /></Link>
         <Link href=""><FaInstagramSquare className='text-4xl text-white' /></Link>
         <Link href=""> <FaLinkedin className='text-4xl text-white' /></Link>
         <Link href=""><FaSquareWhatsapp className='text-4xl text-white' /></Link>
       </div>
-      <div className="mt-11">
+      <div className="mt-2">
         <div className="border-t border-white border-[1px]"></div>
       </div>
 
