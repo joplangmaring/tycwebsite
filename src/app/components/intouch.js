@@ -90,7 +90,7 @@ const IntouchImage = () => {
                   </div>
                 </div>
 
-                <div className='flex flex-col sm:flex-row gap-4 w-full'>
+                <div className='flex mt-5 flex-col sm:flex-row gap-4 w-full'>
                   <div className='mb-4 w-full sm:w-[49%]'>
                     <label htmlFor="email" className='block mb-1 font-playfair'>Email</label>
                     <input
@@ -104,7 +104,7 @@ const IntouchImage = () => {
                   </div>
                 </div>
 
-                <div className='flex flex-col sm:flex-row w-full mt-10 sm:mt-20'>
+                <div className='flex flex-col sm:flex-row w-full mt-5 sm:mt-20'>
                   <div className='mb-4 w-full'>
                     <label htmlFor="message" className='block mb-1 font-playfair'>Message</label>
                     <textarea
@@ -118,7 +118,7 @@ const IntouchImage = () => {
                 </div>
                 <button
                   type="submit"
-                  className='bg-white text-black font-playfair p-2 px-20 text-[24px] w-full sm:w-auto'
+                  className='bg-white text-black font-playfair p-2 px-20 text-lg w-full sm:w-auto'
                   disabled={loading}
                 >
                   {loading ? 'SENDING...' : 'SUBMIT'}

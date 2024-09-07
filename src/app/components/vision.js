@@ -62,7 +62,7 @@ const Vision = () => {
       />
 
       {/* Overlay content */}
-      <div className='absolute inset-0 bg-[#000000BF] flex flex-col justify-center items-start md:items-center'>
+      <div className='absolute inset-0 bg-gradient-to-b from-black/100 via-black/70 to-black/100 flex flex-col justify-center items-start md:items-center'>
         <div className='pt-[120px] text-start md:text-center px-4  ml-[6%] md:ml-0'>
           <motion.span
             ref={headingRef}

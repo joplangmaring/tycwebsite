@@ -18,7 +18,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(180deg, #000000 3%, rgba(0, 0, 0, 0) 23.5%)',
+        'custom-gradient': 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%, #000000 100%)',
       },
     },
   },

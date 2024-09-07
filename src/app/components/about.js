@@ -44,7 +44,7 @@ const About = () => {
   return (
     <div className="relative w-full h-[90vh] bg-black flex justify-end">
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col items-start justify-center text-start text-white bg-black/80 md:items-center md:justify-center md:text-center">
+      <div className="absolute inset-0 flex flex-col items-start justify-center text-start text-white bg-gradient-to-b from-black/100 via-black/70 to-black/100 md:items-center md:justify-center md:text-center">
         <motion.div
           ref={headingRef}
           initial="hidden"
