@@ -11,7 +11,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-
 const handlebarOptions = {
   viewEngine: {
     partialsDir: path.resolve('./views/'), 
@@ -27,11 +26,19 @@ async function sendEmail(context) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_RECEIVE,
-    subject: 'NEW SUBMISSION FROM TYC WEBSITE',
-    template: 'contact', 
-    context: context,
+    subject: `NEW SUBMISSION FROM TYC WEBSITE: ${context.firstname} ${context.lastname}`,
+    template: 'contact', // Handlebars template
+    context: context, // Data to render in the template
+    attachments: [
+      {
+        filename: 'logo_black.png',
+        path: 'https://tycindia.com/logo/logo_black.png', // You can also use a local path
+        cid: 'logo', // Content ID reference to use in the template
+      },
+    ],
   };
 
   return transporter.sendMail(mailOptions);
 }
+
 module.exports = { sendEmail };
