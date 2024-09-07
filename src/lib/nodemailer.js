@@ -27,7 +27,7 @@ async function sendEmail(context) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_RECEIVE,
-    subject: 'New update from Tyc website',
+    subject: 'NEW SUBMISSION FROM TYC WEBSITE',
     template: 'contact', 
     context: context,
   };
