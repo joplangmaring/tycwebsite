@@ -12,8 +12,8 @@ const raleway = Raleway({ subsets: ['latin'] }); // Import and configure Raleway
 const Vision = () => {
   const headingControls = useAnimation();
   const textControls = useAnimation();
-  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2 });
-  const { ref: textRef, inView: textInView } = useInView({ threshold: 0.2 });
+  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const { ref: textRef, inView: textInView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     if (headingInView) {

@@ -33,12 +33,12 @@ const About = () => {
   }, [textControls, textInView]);
 
   const animationVariant = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0,},
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
+      transition: { duration: 0.8, ease: 'easeOut' }
+    }
   };
 
   return (
@@ -59,7 +59,7 @@ const About = () => {
         <motion.div
           ref={textRef}
           initial="hidden"
-          animate={textControls}
+          animate={headingControls}
           variants={animationVariant}
           className="mx-12 md:mx-[20%] text-start md:text-center"
         >

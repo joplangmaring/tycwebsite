@@ -15,12 +15,12 @@ const Footer = () => {
         <Link href="https://www.instagram.com/reel/C4GAauata8r/" target='_blank' rel='norefferer noopener'> <FaLinkedin className='text-4xl text-white' /></Link>
         <Link href="https://api.whatsapp.com/send/?phone=916909378111&text=Reservation&type=phone_number&app_absent=0" target='_blank' rel='norefferer noopener'><FaSquareWhatsapp className='text-4xl text-white' /></Link>
       </div>
-      <div className="mt-2">
-        <div className="border-t border-white border-[1px]"></div>
+      <div className="mt-5">
+        <div className="border-t-[1px] border-white "></div>
       </div>
 
-      <div className='text-center mt-2'>
-        <span className='text-[12px]  font-inter text-white'>Copyright © 2024 THE YEASTERN CIVILIZATION</span>
+      <div className='text-center py-2'>
+        <span className='text-[12px] font-inter text-white'>Copyright © 2024 THE YEASTERN CIVILIZATION</span>
       </div>
     </div>
   )

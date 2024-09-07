@@ -103,10 +103,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../../public/logo/logo_white.png";
+import LogoBlack from "../../../public/logo/logo_black.png";
 import Logo_oval from "../../../public/logo/logo_oval_white.png";
 import HomeImg from "./homeimg";
+import Link from "next/link";
 
-const Navbar = ({ aboutRef,homeRef, visionRef, eventsRef, contactRef }) => {
+const Navbar = ({ aboutRef, homeRef, visionRef, eventsRef, contactRef }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -119,36 +121,36 @@ const Navbar = ({ aboutRef,homeRef, visionRef, eventsRef, contactRef }) => {
     <header className={`flex justify-between items-center fixed z-40 w-screen h-[100px] px-4 md:px-8 transition-colors duration-500 bg-black text-white`}>
       <div>
         <span onClick={() => scrollToSection(homeRef)} className="cursor-pointer">
-          <Image 
+          <Image
             src={Logo}
             alt="Logo"
             height={40}
             width="auto"
-            className="hidden md:block" 
+            className="hidden md:block"
           />
-          <Image 
+          <Image
             src={Logo_oval}
             alt="Logo"
             height={70}
             width="auto"
-            className="block md:hidden mx-3" 
+            className="block md:hidden mx-3"
           />
         </span>
       </div>
       <div className="hidden md:flex text-sm pr-10 space-x-10">
-      <span onClick={() => scrollToSection(homeRef)} className="cursor-pointer font-playfair hover:text-gray-300 text-lg">
+        <span onClick={() => scrollToSection(homeRef)} className="cursor-pointer font-playfair hover:text-gray-300 hover:scale-105 duration-100 text-md">
           HOME
         </span>
-        <span onClick={() => scrollToSection(aboutRef)} className="cursor-pointer font-playfair hover:text-gray-300 text-lg">
+        <span onClick={() => scrollToSection(aboutRef)} className="cursor-pointer font-playfair hover:text-gray-300 hover:scale-105 duration-100 text-md">
           ABOUT
         </span>
-        <span onClick={() => scrollToSection(visionRef)} className="cursor-pointer font-playfair hover:text-gray-300 text-lg">
+        <span onClick={() => scrollToSection(visionRef)} className="cursor-pointer font-playfair hover:text-gray-300 hover:scale-105 duration-100 text-md">
           VISION
         </span>
-        <span onClick={() => scrollToSection(eventsRef)} className="cursor-pointer font-playfair hover:text-gray-300 text-lg">
+        <span onClick={() => scrollToSection(eventsRef)} className="cursor-pointer font-playfair hover:text-gray-300 hover:scale-105 duration-100 text-md">
           EVENTS
         </span>
-        <span onClick={() => scrollToSection(contactRef)} className="cursor-pointer font-playfair hover:text-gray-300 text-lg">
+        <span onClick={() => scrollToSection(contactRef)} className="cursor-pointer font-playfair hover:text-gray-300 hover:scale-105 duration-100 text-md">
           CONTACT
         </span>
       </div>
@@ -167,22 +169,32 @@ const Navbar = ({ aboutRef,homeRef, visionRef, eventsRef, contactRef }) => {
             </svg>
           </button>
         </div>
-        <div className="flex flex-col items-center space-y-4 mt-8">
-        <span onClick={() => { setMenuOpen(false); scrollToSection(homeRef); }} className="text-black text-lg font-playfair cursor-pointer">
+        <div className="flex flex-col items-center space-y-5 mt-8">
+          <Image
+            src={LogoBlack}
+            width='0'
+            height='0'
+            sizes='100svw'
+            className='w-2/3 h-auto mb-10'
+          />
+          <span onClick={() => { setMenuOpen(false); scrollToSection(homeRef); }} className="text-black text-lg font-playfair cursor-pointer">
             HOME
           </span>
           <span onClick={() => { setMenuOpen(false); scrollToSection(aboutRef); }} className="text-black text-lg font-playfair cursor-pointer">
             ABOUT
           </span>
-          <span onClick={() => { setMenuOpen(false); scrollToSection(visionRef); }} className="text-black text-lg font-playfaircursor-pointer">
+          <span onClick={() => { setMenuOpen(false); scrollToSection(visionRef); }} className="text-black text-lg font-playfair cursor-pointer">
             VISION
           </span>
-          <span onClick={() => { setMenuOpen(false); scrollToSection(eventsRef); }} className="text-black text-lg font-playfaircursor-pointer">
+          <span onClick={() => { setMenuOpen(false); scrollToSection(eventsRef); }} className="text-black text-lg font-playfair cursor-pointer">
             EVENTS
           </span>
-          <span onClick={() => { setMenuOpen(false); scrollToSection(contactRef); }} className="text-black text-lg font-playfaircursor-pointer">
+          <span onClick={() => { setMenuOpen(false); scrollToSection(contactRef); }} className="text-black text-lg font-playfair cursor-pointer">
             CONTACT
           </span>
+          <Link href='https://onlybees.in/tyc/restaurant/' className="text-black font-bold underline text-lg font-playfair cursor-pointer">
+            RESERVE NOW
+          </Link>
         </div>
       </div>
     </header>

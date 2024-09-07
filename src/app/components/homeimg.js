@@ -125,7 +125,7 @@ const HomeImg = () => {
   };
 
   const handleClick = () => {
-    router.push('/https://onlybees.in/tyc/restaurant/');
+    router.push('https://onlybees.in/tyc/restaurant/');
   };
 
   return (

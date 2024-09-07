@@ -94,9 +94,9 @@ import smallgallery from '../../../public/smallgallery.png';
 const Gallery = () => {
   return (
     <div>
-      <h1 className='font-playfair text-5xl mb-10 font-black text-white mt-[90px] hidden'>
+      {/* <h1 className='font-playfair text-5xl mb-10 font-black text-white mt-[90px] hidden'>
         Gallery
-      </h1>
+      </h1> */}
 
 
       {/* Large Image (Interior) - shown on medium and larger screens */}
@@ -113,9 +113,9 @@ const Gallery = () => {
       {/* Small Image (smallgallery) - shown on small screens */}
       <div className='md:hidden flex  justify-center  flex-col mx-9'>
         <div>
-        <h1 className='font-playfair text-5xl mb-10 font-black text-white mt-[90px]'>
-        Gallery
-      </h1>
+          {/* <h1 className='font-playfair text-5xl mb-10 font-black text-white mt-[90px]'>
+            Gallery
+          </h1> */}
         </div>
         <Image
           src={smallgallery}

@@ -12,26 +12,26 @@ const Interior = () => {
   return (
     <div className='relative'>
       {/* Gradient Overlay */}
-      <div className='absolute inset-0 bg-custom-gradient z-10 pointer-events-none'></div>
+      <div className='absolute inset-0 md:bg-custom-gradient bg-gradient-to-b from-black/100 via-transparent to-black/100 z-10 pointer-events-none'></div>
       
       {/* Heading Centered on Top */}
       <div className='absolute inset-0 flex items-center justify-center z-20'>
-        <h1 className='text-center text-white text-5xl font-black font-playfair'>INTERIORS</h1>
+        <h1 className='text-center text-white md:text-6xl text-4xl font-black font-playfair'>INTERIORS</h1>
       </div>
 
       {/* Large images (shown on medium and larger screens) */}
       <div className='hidden md:flex flex-col md:flex-row'>
         {/* Ensure full width and height on large screens */}
-        <div className='w-full md:w-full h-[600px] relative'>
+        <div className='w-full md:w-full h-screen relative'>
           <Image src={interior_1} alt="Interior 1" className='object-cover w-full h-full' />
         </div>
-        <div className='w-full md:w-full h-[600px] relative'>
+        <div className='w-full md:w-full h-screen relative'>
           <Image src={interior_2} alt="Interior 2" className='object-cover w-full h-full' />
         </div>
-        <div className='w-full md:w-full h-[600px] relative'>
+        <div className='w-full md:w-full h-screen relative'>
           <Image src={interior_3} alt="Interior 3" className='object-cover w-full h-full' />
         </div>
-        <div className='w-full md:w-full h-[600px] relative'>
+        <div className='w-full md:w-full h-screen relative'>
           <Image src={interior_4} alt="Interior 4" className='object-cover w-full h-full' />
         </div>
       </div>

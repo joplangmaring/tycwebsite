@@ -47,10 +47,10 @@ const Page = () => {
           />
           <div ref={homeRef}><Homeimg /></div> 
           <div ref={aboutRef}><About /></div>
-          <div ref={visionRef}><Vision /></div>
           <Interior />
-          <div ref={eventsRef}><Event /></div>
+          <div ref={visionRef}><Vision /></div>
           <Gallery />
+          <div ref={eventsRef}><Event /></div>
           <div ref={contactRef}><Intouch /></div>
           <Footer />
         </div>

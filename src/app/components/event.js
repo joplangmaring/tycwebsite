@@ -19,7 +19,7 @@ const raleway = Raleway({ subsets: ['latin'] });
 
 const Event = () => {
   const headingControls = useAnimation();
-  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2 });
+  const { ref: headingRef, inView: headingInView } = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     if (headingInView) {
@@ -53,7 +53,7 @@ const Event = () => {
       </div>
 
       {/* Overlay content */}
-      <div className="absolute inset-0 bg-[#000000D9] pt-[50px] md:pt-[70px] ">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/70 to-black/100 pt-[50px] md:pt-[70px] ">
         <div className="border border-[#000000D9] md:mb-11">
           <motion.h1
             ref={headingRef}
@@ -120,7 +120,7 @@ const Event = () => {
         {/* Reserve Now Button */}
         <div className="flex justify-center mt-8 md:mt-10">
         <button className={`bg-black ${raleway.className} text-lg md:text-[20px] text-white text-center flex items-center gap-2 px-4 md:px-6 py-2 md:py-3`}>
-            <Link href="" className="flex items-center gap-2 ">
+            <Link href="https://onlybees.in/tyc/restaurant/" className="flex items-center gap-2 ">
               Reserve Now
               <HiArrowRightCircle className='text-xl md:text-2xl' />
             </Link>
